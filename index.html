@@ -14,19 +14,19 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background: #080604;
       color: #fff;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     .navbar {
       width: 100%;
-      padding: 15px 7%;
+      padding: 14px 7%;
       background: #050403;
       display: flex;
       align-items: center;
@@ -34,7 +34,7 @@
       position: fixed;
       top: 0;
       z-index: 999;
-      border-bottom: 1px solid rgba(218, 169, 65, 0.25);
+      border-bottom: 1px solid rgba(218,169,65,0.25);
     }
 
     .logo-box {
@@ -43,14 +43,13 @@
       gap: 14px;
     }
 
-   .logo-box img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  background: #fff;
-  border-radius: 8px;
-  padding: 0;
-}
+    .logo-box img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 8px;
+    }
 
     .logo-text h2 {
       font-family: Georgia, serif;
@@ -61,12 +60,12 @@
     .logo-text p {
       color: #d8a941;
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .nav-links {
       display: flex;
-      gap: 25px;
+      gap: 24px;
       align-items: center;
     }
 
@@ -74,7 +73,7 @@
       color: #fff;
       text-decoration: none;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     .nav-links a:hover {
@@ -82,63 +81,59 @@
     }
 
     .phone {
-      color: #fff;
-      font-weight: bold;
       font-size: 18px;
-    }
-
-    .book-btn {
-      background: linear-gradient(135deg, #d8a941, #f4c763);
-      color: #111 !important;
-      padding: 14px 28px;
-      border-radius: 10px;
-      text-decoration: none;
       font-weight: 800;
     }
 
-   .hero {
-  min-height: 100vh;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,0.90) 0%,
-      rgba(0,0,0,0.70) 35%,
-      rgba(0,0,0,0.20) 100%
-    ),
-    url("hero.png");
-
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  padding: 140px 8% 90px;
-}
-
-    .hero-content {
-      max-width: 620px;
+    .book-btn,
+    .btn-primary {
+      background: linear-gradient(135deg, #d8a941, #f4c763);
+      color: #111;
+      padding: 15px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .hero-logo {
-      width: 160px;
-      background: rgba(255,255,255,0.95);
-      padding: 10px;
-      border-radius: 12px;
-      margin-bottom: 25px;
+    .btn-outline {
+      color: #fff;
+      border: 1px solid #d8a941;
+      padding: 15px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.70) 38%, rgba(0,0,0,0.15) 100%),
+        url("hero.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 150px 8% 90px;
+    }
+
+    .hero-content {
+      max-width: 650px;
     }
 
     .hero h1 {
       font-family: Georgia, serif;
-      font-size: 68px;
+      font-size: 66px;
       line-height: 1.05;
       color: #d8a941;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .hero-subtitle {
       font-size: 30px;
-      color: #fff;
       font-style: italic;
       margin-bottom: 22px;
     }
@@ -156,60 +151,37 @@
       flex-wrap: wrap;
     }
 
-    .btn-primary,
-    .btn-outline {
-      padding: 16px 28px;
-      border-radius: 8px;
-      font-weight: 800;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #d8a941, #f4c763);
-      color: #111;
-    }
-
-    .btn-outline {
-      border: 1px solid #d8a941;
-      color: #fff;
-    }
-
     .features {
       padding: 45px 8%;
       background: #090705;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 24px;
-      border-top: 1px solid rgba(218, 169, 65, 0.25);
-      border-bottom: 1px solid rgba(218, 169, 65, 0.25);
+      border-top: 1px solid rgba(218,169,65,0.25);
+      border-bottom: 1px solid rgba(218,169,65,0.25);
     }
 
     .feature-card {
       text-align: center;
       padding: 30px 20px;
-      border: 1px solid rgba(218, 169, 65, 0.35);
+      border: 1px solid rgba(218,169,65,0.35);
       border-radius: 14px;
       background: rgba(255,255,255,0.03);
     }
 
     .feature-card i {
-      font-size: 38px;
+      font-size: 36px;
       color: #d8a941;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .feature-card h3 {
       color: #d8a941;
-      font-size: 18px;
       margin-bottom: 10px;
     }
 
     .feature-card p {
       color: #e8dcc8;
-      font-size: 15px;
       line-height: 1.6;
     }
 
@@ -231,14 +203,15 @@
 
     .section-tag {
       color: #d8a941;
-      font-weight: 800;
-      margin-bottom: 12px;
+      font-weight: 900;
       text-transform: uppercase;
+      margin-bottom: 12px;
     }
 
     .about h2,
     .services h2,
-    .why h2 {
+    .why h2,
+    .booking h2 {
       font-family: Georgia, serif;
       font-size: 44px;
       margin-bottom: 20px;
@@ -251,37 +224,53 @@
       margin-bottom: 22px;
     }
 
-   <div class="service-card">
-  <img src="kerala-massage.png" alt="Kerala Massage">
-  <div class="service-card-content">
-    <h3>Kerala Massage</h3>
-    <p>Traditional wellness techniques to relax your body and refresh your mind.</p>
-  </div>
-</div>
+    .services {
+      padding: 75px 8%;
+      background: #080604;
+      text-align: center;
+    }
 
-<div class="service-card">
-  <img src="relaxation-massage.png" alt="Relaxation Massage">
-  <div class="service-card-content">
-    <h3>Relaxation Massage</h3>
-    <p>A soothing therapy experience designed to reduce stress and tension.</p>
-  </div>
-</div>
+    .services h2 {
+      color: #d8a941;
+    }
 
-<div class="service-card">
-  <img src="stress-relief.png" alt="Stress Relief Therapy">
-  <div class="service-card-content">
-    <h3>Stress Relief Therapy</h3>
-    <p>Ideal after long work schedules, travel fatigue and busy daily routines.</p>
-  </div>
-</div>
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
 
-<div class="service-card">
-  <img src="aroma-therapy.png" alt="Aroma Therapy">
-  <div class="service-card-content">
-    <h3>Aroma Therapy</h3>
-    <p>A calming spa experience with relaxing ambience and premium care.</p>
-  </div>
-</div>
+    .service-card {
+      background: #111;
+      border: 1px solid rgba(218,169,65,0.35);
+      border-radius: 16px;
+      overflow: hidden;
+      text-align: left;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.35);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-card-content {
+      padding: 24px;
+    }
+
+    .service-card h3 {
+      color: #d8a941;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .service-card p {
+      color: #e8dcc8;
+      line-height: 1.6;
+    }
 
     .why {
       padding: 70px 8%;
@@ -302,17 +291,11 @@
     .why-item {
       display: flex;
       gap: 15px;
-      align-items: flex-start;
     }
 
     .why-item i {
       color: #d8a941;
       font-size: 28px;
-    }
-
-    .why-item h4 {
-      font-size: 18px;
-      margin-bottom: 6px;
     }
 
     .why-item p {
@@ -321,20 +304,13 @@
     }
 
     .booking {
-      padding: 75px 8%;
+      padding: 80px 8%;
       background:
         linear-gradient(90deg, rgba(0,0,0,0.88), rgba(0,0,0,0.55)),
-        url("Image for website.jpg");
+        url("hero.png");
       background-size: cover;
       background-position: center;
       text-align: center;
-    }
-
-    .booking h2 {
-      font-family: Georgia, serif;
-      font-size: 48px;
-      color: #fff;
-      margin-bottom: 20px;
     }
 
     .booking p {
@@ -362,7 +338,6 @@
       color: #e8dcc8;
       line-height: 1.8;
       text-decoration: none;
-      font-size: 16px;
     }
 
     footer {
@@ -389,12 +364,6 @@
       z-index: 9999;
       box-shadow: 0 8px 25px rgba(0,0,0,0.35);
       text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .floating-whatsapp:hover {
-      transform: scale(1.08);
-      background: #1ebe5d;
     }
 
     .floating-call {
@@ -406,19 +375,15 @@
       padding: 16px 28px;
       border-radius: 40px;
       text-decoration: none;
-      font-weight: 800;
+      font-weight: 900;
       z-index: 9999;
       box-shadow: 0 8px 25px rgba(0,0,0,0.35);
     }
 
     @media (max-width: 992px) {
-      .nav-links {
+      .nav-links,
+      .phone {
         display: none;
-      }
-
-      .hero {
-        padding: 130px 6% 70px;
-        background-position: center;
       }
 
       .hero h1 {
@@ -438,12 +403,26 @@
     }
 
     @media (max-width: 600px) {
+      .navbar {
+        padding: 12px 5%;
+      }
+
+      .logo-box img {
+        width: 58px;
+        height: 58px;
+      }
+
       .logo-text h2 {
         font-size: 18px;
       }
 
-      .phone {
-        display: none;
+      .book-btn {
+        padding: 12px 18px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 130px 6% 70px;
       }
 
       .hero h1 {
@@ -451,7 +430,7 @@
       }
 
       .hero-subtitle {
-        font-size: 24px;
+        font-size: 23px;
       }
 
       .hero-text {
@@ -482,242 +461,232 @@
 
 <body>
 
-  <header class="navbar">
-    <div class="logo-box">
-      <img src="logo.png" alt="Tantric Ayur Spa Logo">
-      <div class="logo-text">
-        <h2>TANTRIC AYUR SPA</h2>
-        <p>Kerala Massage in Dubai</p>
-      </div>
+<header class="navbar">
+  <div class="logo-box">
+    <img src="logo.png" alt="Tantric Ayur Spa Logo">
+    <div class="logo-text">
+      <h2>TANTRIC AYUR SPA</h2>
+      <p>Kerala Massage in Dubai</p>
     </div>
+  </div>
 
-    <nav class="nav-links">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT US</a>
-      <a href="#services">SERVICES</a>
-      <a href="#why">WHY US</a>
-      <a href="#booking">BOOK NOW</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
+  <nav class="nav-links">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT US</a>
+    <a href="#services">SERVICES</a>
+    <a href="#why">WHY US</a>
+    <a href="#booking">BOOK NOW</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
 
-    <div class="phone">
-      <i class="fa-solid fa-phone"></i> 050 918 4885
-    </div>
+  <div class="phone">
+    <i class="fa-solid fa-phone"></i> 050 918 4885
+  </div>
 
-    <a href="#booking" class="book-btn">BOOK NOW</a>
-  </header>
+  <a href="#booking" class="book-btn">BOOK NOW</a>
+</header>
 
-  <section class="hero" id="home">
-    <div class="hero-content">
-    
-      <h1>Authentic Kerala Massage in Dubai</h1>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Authentic Kerala Massage in Dubai</h1>
+    <p class="hero-subtitle">Relax • Rejuvenate • Renew</p>
+    <p class="hero-text">
+      Experience the healing touch of Kerala from our skilled Malayalee therapists.
+      Designed for comfort, care, privacy and complete relaxation.
+    </p>
 
-      <p class="hero-subtitle">Relax • Rejuvenate • Renew</p>
-
-      <p class="hero-text">
-        Experience the healing touch of Kerala from our skilled Malayalee therapists.
-        Designed for comfort, care, privacy and complete relaxation.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="https://wa.me/971509184885" class="btn-primary" target="_blank">
-          <i class="fab fa-whatsapp"></i> Book on WhatsApp
-        </a>
-
-        <a href="#services" class="btn-outline">
-          View Services
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="features">
-    <div class="feature-card">
-      <i class="fa-solid fa-spa"></i>
-      <h3>Kerala Massage</h3>
-      <p>Authentic Kerala-inspired therapies for deep relaxation and body balance.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-user-nurse"></i>
-      <h3>Malayalee Therapists</h3>
-      <p>Skilled, experienced and caring therapists with a professional approach.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-candle-holder"></i>
-      <h3>Luxury Ambience</h3>
-      <p>Peaceful treatment rooms designed for comfort, privacy and relaxation.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-heart"></i>
-      <h3>Caring Service</h3>
-      <p>Every session is delivered with warmth, respect and personalized care.</p>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div>
-      <img src="aboutus.png" alt="Kerala Massage at Tantric Ayur Spa">
-    </div>
-
-    <div>
-      <p class="section-tag">Welcome To</p>
-      <h2>Tantric Ayur Spa</h2>
-
-      <p>
-        Tantric Ayur Spa brings the essence of Kerala’s wellness tradition to Dubai
-        with comfort, care and complete relaxation.
-      </p>
-
-      <p>
-        Whether you are tired from stressful work schedules, body fatigue or daily pressure,
-        our professional therapists help you relax, recharge and feel refreshed.
-      </p>
-
+    <div class="hero-buttons">
       <a href="https://wa.me/971509184885" class="btn-primary" target="_blank">
-        <i class="fab fa-whatsapp"></i> Enquire Now
+        <i class="fab fa-whatsapp"></i> Book on WhatsApp
       </a>
+      <a href="#services" class="btn-outline">View Services</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="services" id="services">
-    <p class="section-tag">Our Services</p>
-    <h2>Signature Spa Therapies</h2>
+<section class="features">
+  <div class="feature-card">
+    <i class="fa-solid fa-spa"></i>
+    <h3>Kerala Massage</h3>
+    <p>Authentic Kerala-inspired therapies for deep relaxation and body balance.</p>
+  </div>
 
-    <div class="service-grid">
-      <div class="service-card">
-        <img src="Image for website.jpg" alt="Kerala Massage">
-        <div class="service-card-content">
-          <h3>Kerala Massage</h3>
-          <p>Traditional wellness techniques to relax your body and refresh your mind.</p>
-        </div>
-      </div>
+  <div class="feature-card">
+    <i class="fa-solid fa-user-nurse"></i>
+    <h3>Malayalee Therapists</h3>
+    <p>Skilled, experienced and caring therapists with a professional approach.</p>
+  </div>
 
-      <div class="service-card">
-        <img src="Image for website.jpg" alt="Relaxation Massage">
-        <div class="service-card-content">
-          <h3>Relaxation Massage</h3>
-          <p>A soothing therapy experience designed to reduce stress and tension.</p>
-        </div>
-      </div>
+  <div class="feature-card">
+    <i class="fa-solid fa-candle-holder"></i>
+    <h3>Luxury Ambience</h3>
+    <p>Peaceful treatment rooms designed for comfort, privacy and relaxation.</p>
+  </div>
 
-      <div class="service-card">
-        <img src="Image for website.jpg" alt="Stress Relief Therapy">
-        <div class="service-card-content">
-          <h3>Stress Relief Therapy</h3>
-          <p>Ideal after long work schedules, travel fatigue and busy daily routines.</p>
-        </div>
-      </div>
+  <div class="feature-card">
+    <i class="fa-solid fa-heart"></i>
+    <h3>Caring Service</h3>
+    <p>Every session is delivered with warmth, respect and personalized care.</p>
+  </div>
+</section>
 
-      <div class="service-card">
-        <img src="Image for website.jpg" alt="Aroma Therapy">
-        <div class="service-card-content">
-          <h3>Aroma Therapy</h3>
-          <p>A calming spa experience with relaxing ambience and premium care.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="about" id="about">
+  <div>
+    <img src="aboutus.png" alt="Tantric Ayur Spa About Us">
+  </div>
 
-  <section class="why" id="why">
-    <div>
-      <p class="section-tag">Why Choose Us</p>
-      <h2>Best Spa in Karama</h2>
-      <p>
-        We combine authentic Kerala techniques, professional therapists,
-        luxury ambience and convenient booking for a truly relaxing experience.
-      </p>
-    </div>
-
-    <div class="why-list">
-      <div class="why-item">
-        <i class="fa-solid fa-leaf"></i>
-        <div>
-          <h4>Authentic Kerala Therapies</h4>
-          <p>Inspired by traditional Kerala wellness practices.</p>
-        </div>
-      </div>
-
-      <div class="why-item">
-        <i class="fa-solid fa-user-check"></i>
-        <div>
-          <h4>Professional Therapists</h4>
-          <p>Experienced and caring Malayalee therapists.</p>
-        </div>
-      </div>
-
-      <div class="why-item">
-        <i class="fa-solid fa-shield-heart"></i>
-        <div>
-          <h4>Comfort & Privacy</h4>
-          <p>Clean, private and peaceful treatment rooms.</p>
-        </div>
-      </div>
-
-      <div class="why-item">
-        <i class="fab fa-whatsapp"></i>
-        <div>
-          <h4>Easy Booking</h4>
-          <p>Quick booking through call or WhatsApp.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="booking" id="booking">
-    <h2>Are You Tired of Stressful Work Schedules?</h2>
+  <div>
+    <p class="section-tag">Welcome To</p>
+    <h2>Tantric Ayur Spa</h2>
     <p>
-      Take a pause. Relax your body. Refresh your mind.
-      Enjoy the calming spa experience at Tantric Ayur Spa.
+      Tantric Ayur Spa brings the essence of Kerala’s wellness tradition to Dubai
+      with comfort, care and complete relaxation.
+    </p>
+    <p>
+      Whether you are tired from stressful work schedules, body fatigue or daily pressure,
+      our professional therapists help you relax, recharge and feel refreshed.
     </p>
 
     <a href="https://wa.me/971509184885" class="btn-primary" target="_blank">
-      <i class="fab fa-whatsapp"></i> Book Your Session Now
+      <i class="fab fa-whatsapp"></i> Enquire Now
     </a>
-  </section>
+  </div>
+</section>
 
-  <section class="contact" id="contact">
-    <div class="contact-box">
-      <h3>Visit Us</h3>
-      <p>
-        Fortune Karama Hotel, Office No. 245<br>
-        2nd Floor, B Block<br>
-        Near ADCB Metro Station<br>
-        Karama, Dubai, UAE
-      </p>
+<section class="services" id="services">
+  <p class="section-tag">Our Services</p>
+  <h2>Signature Spa Therapies</h2>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <img src="kerala-massage.png" alt="Kerala Massage">
+      <div class="service-card-content">
+        <h3>Kerala Massage</h3>
+        <p>Traditional wellness techniques to relax your body and refresh your mind.</p>
+      </div>
     </div>
 
-    <div class="contact-box">
-      <h3>Bookings & Enquiries</h3>
-      <p>
-        <a href="tel:+971509184885">050 918 4885</a><br>
-        <a href="https://wa.me/971509184885" target="_blank">
-          WhatsApp Booking
-        </a>
-      </p>
+    <div class="service-card">
+      <img src="relaxation-massage.png" alt="Relaxation Massage">
+      <div class="service-card-content">
+        <h3>Relaxation Massage</h3>
+        <p>A soothing therapy experience designed to reduce stress and tension.</p>
+      </div>
     </div>
 
-    <div class="contact-box">
-      <h3>Website</h3>
-      <p>
-        <a href="https://tantricspa.ae" target="_blank">tantricspa.ae</a>
-      </p>
+    <div class="service-card">
+      <img src="stress-relief.png" alt="Stress Relief Therapy">
+      <div class="service-card-content">
+        <h3>Stress Relief Therapy</h3>
+        <p>Ideal after long work schedules, travel fatigue and busy daily routines.</p>
+      </div>
     </div>
-  </section>
 
-  <footer>
-    © 2026 Tantric Ayur Spa. All Rights Reserved.
-  </footer>
+    <div class="service-card">
+      <img src="aroma-therapy.png" alt="Aroma Therapy">
+      <div class="service-card-content">
+        <h3>Aroma Therapy</h3>
+        <p>A calming spa experience with relaxing ambience and premium care.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <a href="https://wa.me/971509184885" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+<section class="why" id="why">
+  <div>
+    <p class="section-tag">Why Choose Us</p>
+    <h2>Best Spa in Karama</h2>
+    <p>
+      We combine authentic Kerala techniques, professional therapists,
+      luxury ambience and convenient booking for a truly relaxing experience.
+    </p>
+  </div>
+
+  <div class="why-list">
+    <div class="why-item">
+      <i class="fa-solid fa-leaf"></i>
+      <div>
+        <h4>Authentic Kerala Therapies</h4>
+        <p>Inspired by traditional Kerala wellness practices.</p>
+      </div>
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-user-check"></i>
+      <div>
+        <h4>Professional Therapists</h4>
+        <p>Experienced and caring Malayalee therapists.</p>
+      </div>
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-shield-heart"></i>
+      <div>
+        <h4>Comfort & Privacy</h4>
+        <p>Clean, private and peaceful treatment rooms.</p>
+      </div>
+    </div>
+
+    <div class="why-item">
+      <i class="fab fa-whatsapp"></i>
+      <div>
+        <h4>Easy Booking</h4>
+        <p>Quick booking through call or WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <h2>Are You Tired of Stressful Work Schedules?</h2>
+  <p>
+    Take a pause. Relax your body. Refresh your mind.
+    Enjoy the calming spa experience at Tantric Ayur Spa.
+  </p>
+
+  <a href="https://wa.me/971509184885" class="btn-primary" target="_blank">
+    <i class="fab fa-whatsapp"></i> Book Your Session Now
   </a>
+</section>
 
-  <a href="tel:+971509184885" class="floating-call">
-    <i class="fa-solid fa-phone"></i> 050 918 4885
-  </a>
+<section class="contact" id="contact">
+  <div class="contact-box">
+    <h3>Visit Us</h3>
+    <p>
+      Fortune Karama Hotel, Office No. 245<br>
+      2nd Floor, B Block<br>
+      Near ADCB Metro Station<br>
+      Karama, Dubai, UAE
+    </p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Bookings & Enquiries</h3>
+    <p>
+      <a href="tel:+971509184885">050 918 4885</a><br>
+      <a href="https://wa.me/971509184885" target="_blank">WhatsApp Booking</a>
+    </p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Website</h3>
+    <p>
+      <a href="https://tantricspa.ae" target="_blank">tantricspa.ae</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Tantric Ayur Spa. All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/971509184885" class="floating-whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="tel:+971509184885" class="floating-call">
+  <i class="fa-solid fa-phone"></i> 050 918 4885
+</a>
 
 </body>
 </html>
